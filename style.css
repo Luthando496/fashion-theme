@@ -152,8 +152,210 @@ html {
   }
 }
 
-/* .mySlides{
-    display: none;
-} */
+#boxes {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+#boxes .box-container {
+  max-width: 97vw;
+  margin: 0 auto;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+}
+#boxes .box-content {
+  padding: 2.9rem;
+  max-width: 46%;
+  color: white;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#boxes .box-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 1.5rem 0;
+}
+#boxes .box-content a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: white;
+  border-bottom: 1px solid white;
+  max-width: 60%;
+}
+#boxes .box-content h2 {
+  font-size: 3.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#boxes .box-1 {
+  background: url("./img/cat-colored-fashion-7.jpg") center center no-repeat;
+  object-fit: contain;
+}
+#boxes .box-2 {
+  background: url("./img/cat-colored-fashion-14.jpg") center center no-repeat;
+  object-fit: fill;
+}
+#boxes .box-3 {
+  background: url("./img/cat-colored-fashion-10.jpg") center center no-repeat;
+  object-fit: fill;
+}
+
+.latest {
+  margin-top: 8rem;
+}
+.latest-container {
+  max-width: 85vw;
+  margin: 0 auto;
+}
+.latest-content {
+  text-align: center;
+}
+.latest-content h4 {
+  font-family: "Roboto", sans-serif;
+  color: gray;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2.4rem;
+}
+.latest-content h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.latest-content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+.latest-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 420px);
+  width: 100%;
+  gap: 1.5rem;
+}
+.latest-image {
+  width: 100%;
+  height: 80%;
+}
+.latest-image img {
+  width: 100%;
+  height: 100%;
+}
+.latest-wrapper {
+  text-align: center;
+}
+.latest-wrapper h3 {
+  font-size: 1.9rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  margin-top: 0.7rem;
+}
+.latest-wrapper p {
+  color: #a5a5a5;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  padding: 0.4rem;
+}
+.latest-wrapper h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #52bd72;
+}
+
+.visited {
+  margin-top: 12.2rem;
+  margin-bottom: 3rem;
+}
+.visited__container {
+  max-width: 95vw;
+  text-align: center;
+}
+.visited__content h3 {
+  font-family: "Roboto", sans-serif;
+  color: #a5a5a5;
+  font-size: 1.7rem;
+  margin-bottom: 1.9rem;
+}
+.visited__content h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: light;
+  margin-bottom: 1.5rem;
+}
+.visited__content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  color: #747171;
+  font-weight: 700;
+}
+.visited__wrapper {
+  max-width: 92vw;
+  margin: 0 auto;
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: repeat(5, 250px);
+  gap: 1rem;
+}
+.visited__card {
+  width: 100%;
+  position: relative;
+}
+.visited__card h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+.visited__card p {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+.visited__img {
+  width: 100%;
+}
+.visited__img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.latepro {
+  margin-top: 6rem;
+}
+.latepro__content {
+  text-align: center;
+}
+.latepro__content h3 {
+  font-family: "Roboto", sans-serif;
+  color: #a5a5a5;
+  font-size: 1.7rem;
+  margin-bottom: 1.9rem;
+}
+.latepro__content h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: light;
+  margin-bottom: 1.5rem;
+}
+.latepro__content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  color: #747171;
+  font-weight: 700;
+}
 
 /*# sourceMappingURL=style.css.map */

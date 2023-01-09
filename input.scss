@@ -16,6 +16,8 @@ html{
 }
 
 
+
+// header start
 .header{
 
   .nav{
@@ -195,17 +197,293 @@ html{
     }
 }
 
+// header end
+
+
+// boxes start
+
+#boxes{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+    .box-container{
+        max-width: 97vw;
+        // background-color: aqua;
+        margin: 0 auto;
+        height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.7rem;
+    }
+
+    .box{
+
+        &-content{
+            padding: 2.9rem;
+            max-width: 46%;
+            color: $white;
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            p{
+                font-size: 1.8rem;
+                font-weight: 300;
+                padding: 1.5rem 0;
+            }
+
+            a{
+                text-decoration: none;
+                // padding: 1.5rem 0;
+                font-size: 1.7rem;
+                color: $white;
+                border-bottom: 1px solid $white;
+                max-width: 60%;
+            }
+
+            h2{
+                font-size: 3.4rem;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+
+        }
+        
+        &-1{
+            background: url('./img/cat-colored-fashion-7.jpg')center center no-repeat;
+            object-fit: contain;
+            
+        }
+        &-2{
+            background: url('./img/cat-colored-fashion-14.jpg')center center no-repeat;
+            object-fit: fill;
+    
+        }
+        &-3{
+            background: url('./img/cat-colored-fashion-10.jpg')center center no-repeat;
+            object-fit: fill;
+    
+        }
+    }
+    
+}
+
+// boxes end
+
+// latest
+
+.latest{
+    margin-top: 8rem;
+
+    &-container{
+        max-width: 85vw;
+        margin: 0 auto;
+        // display:grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &-content{
+        text-align: center;
+
+        h4{
+            font-family: 'Roboto', sans-serif;
+            color: gray;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 2.4rem;
+        }
+
+        h1{
+            font-family: 'Roboto', sans-serif;
+            font-size: 4rem;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+        }
+
+
+    }
+
+    &-images{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,420px);
+        width: 100%;
+        gap: 1.5rem;
+
+    }
+
+    &-image{
+        width: 100%;
+        height: 80%;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-wrapper{
+        text-align: center;
+
+        h3{
+            font-size: 1.9rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;
+            margin-top: 0.7rem;
+        }
+
+
+        p{
+            color:#a5a5a5;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4rem;
+            padding: 0.4rem;
+        }
+
+        
+        h4{
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color:#52bd72;
+        }
+    }
+
+
+
+}
 
 
 
 
+// visited section
 
-/* .mySlides{
-    display: none;
-} */
+.visited{
+    margin-top: 12.2rem;
+    margin-bottom: 3rem;
+
+    &__container{
+        max-width: 95vw;
+        text-align: center;
 
 
 
+    }
+
+    &__content{
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            color: #a5a5a5;
+            font-size: 1.7rem;
+            margin-bottom: 1.9rem;
+        }
+        
+        h1{
+            font-family: 'Roboto', sans-serif;
+            font-size: 4rem;
+            font-weight: light;
+            margin-bottom: 1.5rem;
+        }
+        
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4rem;
+            color: #747171;
+            font-weight: 700;
+        }
+
+    }
+    &__wrapper{
+        max-width: 92vw;
+        margin: 0 auto;
+        display: grid;
+        margin-top: 3rem;
+        grid-template-columns: repeat(5,250px);
+        gap: 1rem;
+
+    }
+    
+    &__card{
+        width: 100%;
+        position: relative;
+
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            // transform: translate(50%,-50%);
+        }
+
+        p{
+            position: absolute;
+            bottom: 20%;
+            left: 40%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4rem;
+            color: #ffffff;
+        }
+    }
+
+    &__img{
+        width: 100%;
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+    }
+
+
+
+}
+
+
+// latest products 
+
+.latepro{
+    margin-top: 6rem;
+
+    &__content{
+        text-align: center;
+
+        h3{
+            font-family: 'Roboto', sans-serif;
+            color: #a5a5a5;
+            font-size: 1.7rem;
+            margin-bottom: 1.9rem;
+        }
+        
+        h1{
+            font-family: 'Roboto', sans-serif;
+            font-size: 4rem;
+            font-weight: light;
+            margin-bottom: 1.5rem;
+        }
+        
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4rem;
+            color: #747171;
+            font-weight: 700;
+        }
+    }
+}
 
 
 
